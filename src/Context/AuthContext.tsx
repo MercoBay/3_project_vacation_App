@@ -12,12 +12,16 @@ interface LoginData {
     password: string;
 }
 
+interface RegisterData {
+    email: string;
+    password: string;
+}
+
 interface AuthContextType {
-    isAuthenticated: boolean;
     user: User | null;
-    login: (data: LoginData) => Promise<void>;
+    login: (email: string, password: string) => Promise<void>;
+    register: (userData: RegisterData) => Promise<void>;
     logout: () => void;
-    loading: boolean;
     isAdmin: boolean;
 }
 

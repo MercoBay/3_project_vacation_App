@@ -73,7 +73,7 @@ export const apiService = {
 
     // Vacations endpoints
     vacations: {
-        getAll: () => api.get<Vacation[]>('/vacations').then(res => res.data),
+        getAll: () => api.get('/vacations').then(res => res.data),
         getById: (id: number) => api.get<Vacation>(`/vacations/${id}`).then(res => res.data),
         create: (data: Partial<Vacation>) => api.post('/vacations', data).then(res => res.data),
         update: (id: number, data: Partial<Vacation>) => api.put(`/vacations/${id}`, data).then(res => res.data),

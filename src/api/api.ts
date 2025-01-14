@@ -19,6 +19,16 @@ interface LoginData {
     password: string;
 }
 
+export interface Vacation {
+    id: number;
+    country_id: number;
+    description: string;
+    start_date: string;
+    end_date: string;
+    price: string;
+    image_url: string;
+}
+
 export const apiService = {
     auth: {
         register: async (data: RegisterData) => {
@@ -39,6 +49,10 @@ export const apiService = {
             const response = await api.post('/login', data);
             return response.data;
         }
+    },
+    vacations: {
+        getAll: () => api.get<Vacation[]>('/vacations').then(res => res.data),
+        // ...otros métodos
     }
 };
 

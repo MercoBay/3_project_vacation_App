@@ -4,6 +4,7 @@ import styles from './VacationList.module.css';
 
 interface Vacation {
   id: number;
+  country: string;
   description: string;
   price: string;
   image_url: string;
@@ -20,7 +21,12 @@ const VacationList = () => {
     const fetchVacations = async () => {
       try {
         const response = await apiService.vacations.getAll();
-        setVacations(response);
+        if (Array.isArray(response)) {
+          setVacations(response);
+        } else {
+          console.error('La respuesta no es un array:', response);
+          setError('Error en el formato de datos');
+        }
       } catch (err) {
         console.error('Error fetching vacations:', err);
         setError('Error al cargar las vacaciones');
