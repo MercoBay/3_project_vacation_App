@@ -1,0 +1,66 @@
+/* Clase principal para el contenedor de la página de login */
+/* Estilo del contenedor principal para centrar */
+.container {
+    min-height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.loginBox {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    background-color: white;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.iconWrapper {
+    margin: 1rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(25, 118, 210, 0.3);
+    transition: all 0.3s ease;
+}
+
+.loginForm {
+    width: 100%;
+}
+
+.registerLink {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.registerLink a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.registerLink a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

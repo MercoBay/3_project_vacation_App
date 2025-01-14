@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #1976d2 !important;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar button {
+  text-transform: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+}
+.navbar {
+    background-color: #1976d2 !important;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar button {
+    text-transform: none;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      padding: 0.5rem;
+    }
+  } 

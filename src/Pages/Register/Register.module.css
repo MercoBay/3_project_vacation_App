@@ -1,0 +1,91 @@
+.container {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.registerBox {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  background-color: white;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.iconWrapper {
+  margin: 1rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(25, 118, 210, 0.3);
+  transition: all 0.3s ease;
+}
+
+.iconWrapper:hover {
+  transform: scale(1.1);
+  background-color: #1565c0;
+}
+
+.registerForm {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.loginLink {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #666;
+}
+
+.loginLink a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.loginLink a:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .registerBox {
+    padding: 1.5rem;
+  }
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registerBox {
+  animation: fadeIn 0.5s ease-out;
+}
+  

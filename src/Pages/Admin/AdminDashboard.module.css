@@ -1,0 +1,32 @@
+/* Add your styles here */
+
+.container {
+    padding: 24px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.header {
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.grid {
+    margin-top: 24px;
+}
+
+.icon {
+    font-size: 48px !important;
+    color: #1976d2;
+    margin-bottom: 16px;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
