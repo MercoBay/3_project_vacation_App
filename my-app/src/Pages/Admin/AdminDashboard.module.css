@@ -1,0 +1,124 @@
+/* Add your styles here */
+
+.container {
+    padding: 24px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.header {
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.grid {
+    margin-top: 24px;
+}
+
+.icon {
+    font-size: 48px !important;
+    color: #1976d2;
+    margin-bottom: 16px;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.createButton {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f5f5f5;
+}
+
+.editButton,
+.deleteButton {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editButton {
+  background-color: #2196F3;
+  color: white;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ef9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #a5d6a7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button[title] {
+  position: relative;
+}
+
+button[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+} 

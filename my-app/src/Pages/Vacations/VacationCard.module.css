@@ -1,0 +1,147 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  height: 200px;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 15px;
+}
+
+.price {
+  color: #2e7d32;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.detailsButton {
+  width: 100%;
+  padding: 10px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.detailsButton:hover {
+  background: #1565c0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.modalContent h2 {
+  color: #1976d2;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.modalContent img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px 0 20px;
+}
+
+.modalDetails {
+  margin: 20px 0;
+}
+
+.modalDetails h3 {
+  color: #333;
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.modalDetails ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.modalDetails li {
+  padding: 8px 0;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+
+.modalDetails li:last-child {
+  border-bottom: none;
+}
+
+.modalContent button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modalContent button:hover {
+  background: #d32f2f;
+}
+
+/* Estilos adicionales para la tarjeta */
+.content h3 {
+  margin: 0 0 8px;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.content p {
+  color: #666;
+  margin: 0 0 16px;
+}
+
+.dates {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+} 
