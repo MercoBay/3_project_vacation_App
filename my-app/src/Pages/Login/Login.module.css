@@ -10,57 +10,40 @@
 }
 
 .loginBox {
-    padding: 2rem;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 400px;
+    padding: 2rem;
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    background-color: white;
-    animation: fadeIn 0.5s ease-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.iconWrapper {
-    margin: 1rem;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(25, 118, 210, 0.3);
-    transition: all 0.3s ease;
-}
-
-.loginForm {
+.alert {
     width: 100%;
+    margin-bottom: 1rem;
+}
+
+.adminInfo {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .registerLink {
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
 .registerLink a {
-    color: #1976d2;
+    color: #1976D2;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .registerLink a:hover {
     text-decoration: underline;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

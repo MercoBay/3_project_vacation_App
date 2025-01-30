@@ -1,37 +1,64 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
-import Login from './Pages/Login/Login';
-import VacationsList from './Pages/Vacations/VacationsList';
+import Login from './Pages/Auth/Login';
+import Register from './Pages/Auth/Register';
+import { Vacations, VacationDetails } from './Pages/Vacations';
 import AdminDashboard from './Pages/Admin/AdminDashboard';
-import ProtectedRoute from './Components/ProtectedRoute';
+import { Box } from '@mui/material';
 import { AuthProvider } from './Context/AuthContext';
 
 function App() {
   return (
     <AuthProvider>
-      <div className="app">
+      <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
-        <main>
+        <Box component="main" sx={{ flexGrow: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/vacations" element={<VacationsList />} />
-            <Route 
-              path="/admin/*" 
-              element={
-                <ProtectedRoute requireAdmin>
-                  <Routes>
-                    <Route path="dashboard" element={<AdminDashboard />} />
-                  </Routes>
-                </ProtectedRoute>
-              } 
-            />
+            <Route path="/register" element={<Register />} />
+            <Route path="/vacations" element={<Vacations />} />
+            <Route path="/vacations/:id" element={<VacationDetails />} />
+            <Route path="/admin/dashboard" element={<AdminDashboard />} />
           </Routes>
-        </main>
-      </div>
+        </Box>
+      </Box>
     </AuthProvider>
   );
 }
 
 export default App;
+
+
+
+// import { Routes, Route } from 'react-router-dom';
+// import Navbar from './Components/Navbar/Navbar';
+// import Home from './Pages/Home/Home';
+// import Login from './Pages/Auth/Login';
+// import Register from './Pages/Auth/Register';
+// import Vacations from './Pages/Vacations/Vacations';
+// import AdminDashboard from './Pages/Admin/AdminDashboard';
+// import { Box } from '@mui/material';
+// import { AuthProvider } from './Context/AuthContext';
+
+// function App() {
+//   return (
+//     <AuthProvider>
+//       <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+//         <Navbar />
+//         <Box component="main" sx={{ flexGrow: 1 }}>
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//             <Route path="/login" element={<Login />} />
+//             <Route path="/register" element={<Register />} />
+//             <Route path="/vacations" element={<Vacations />} />
+//             <Route path="/admin/dashboard" element={<AdminDashboard />} />
+//           </Routes>
+//         </Box>
+//       </Box>
+//     </AuthProvider>
+//   );
+// }
+
+// export default App;

@@ -13,8 +13,9 @@ export interface Vacation {
   price: number;
   image_url: string;
   details: VacationDetails;
+  followers_count?: number;
 }
 
-export interface VacationFormData extends Omit<Vacation, 'id'> {
+export interface VacationFormData extends Omit<Vacation, 'id' | 'price'> {
   price: string;
 } 

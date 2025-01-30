@@ -1,5 +1,7 @@
 .navbar {
-  background-color: #1976d2;
+  background-color: #1976d2 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  z-index: 1000;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -69,4 +71,22 @@
 .logoutButton:hover {
   background-color: white;
   color: #1976d2;
+}
+
+.link {
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: 500 !important;
+  transition: background-color 0.3s ease !important;
+  border-radius: 4px !important;
+  padding: 6px 16px !important;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Add margin to main content to prevent it from being hidden under navbar */
+:global(main) {
+  margin-top: 64px !important;
 } 

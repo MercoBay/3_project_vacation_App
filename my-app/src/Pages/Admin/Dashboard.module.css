@@ -1,0 +1,45 @@
+.dashboard {
+  padding: 2rem;
+  margin-top: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 400px;
+  padding: 1rem 0;
+}
+
+.tableContainer {
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.actionCell {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dialogContent {
+  padding: 2rem;
+}
+
+@media (max-width: 600px) {
+  .form {
+    min-width: 300px;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+} 

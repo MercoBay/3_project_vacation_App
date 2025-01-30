@@ -1,0 +1,86 @@
+.container {
+  padding: 2rem;
+  margin-top: 64px;
+}
+
+.title {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.media {
+  height: 200px;
+  object-fit: cover;
+}
+
+.likeButton {
+  position: absolute !important;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  padding: 6px !important;
+}
+
+.likeButton:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.likesCount {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+/* Optimize image loading */
+img {
+  object-fit: cover;
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+} 
